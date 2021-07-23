@@ -22,7 +22,17 @@ const resultP = document.getElementById("ResultP");
 resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
 }
 
+function onClickCalc(){
+    const inputPrice = document.getElementById("InputPrice");
+    const priceValue = inputPrice.value;
+    const inputDiscount = document.getElementById("InputDiscount");
+    const priceDiscount = inputDiscount.value;
 
+    const precioConDescuento = calcularPrecioConDescuento(priceValue, priceDiscount);
+
+    const resultP = document.getElementById("ResultPrice");
+    resultP.innerText = "El precio con descuento es: $" + precioConDescuento;
+}
 // console.log({
 //   precioOriginal,
 //   descuento,
