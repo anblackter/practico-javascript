@@ -35,7 +35,7 @@ function alturaTriangulo(lado1, lado2, lado3){
 
     if (isoceles){
         altura = Math.sqrt(Math.pow(a, 2)-(Math.pow(b, 2)/4));
-        return console.log("la altura de tu triámgulo es: " + altura);
+        return console.log("La altura de tu triámgulo es: " + altura);
     } else {
         console.log("Lo siento pero tu triángulo no es isósceles");
     }
